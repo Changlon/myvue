@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>实现一个简单的vue</title>
+	</head>
+	<body>
+		
+		<div id="app"> 
+			测试 v-text  
+			<hr>
+			
+			<p :class="a b c" style="background-color: red;width: 50%;" v-text="name"></p>
+			
+			<br>
+			测试 v-html 
+			<hr>
+			
+			
+			<div v-html="html"></div>
+			
+			
+			<br>
+			测试v-model
+			<hr>
+			
+			<input  type="text" v-model="name" > 
+			<hr>
+			
+			
+			<br>
+			测试v-if 
+			<hr>
+			
+			<div v-if="isShow">
+				我出现了，哈哈哈！！！<br>
+				这是vue的响应式，指令原理！！！
+				
+			</div>
+			
+			 <br>
+			测试v-on:event|@click
+			<hr>
+			
+			
+			<button type="button" v-on:click="click1">show</button>
+			<button type="button" v-on:click="click2">render Html</button>
+			<button type="button" @click="click3">@绑定事件</button>
+			
+			
+			
+		</div>
+		
+		<script src="./src/index.js" type="module"></script>
+	</body>
+</html>
